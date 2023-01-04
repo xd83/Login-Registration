@@ -20,5 +20,9 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),  # 主页
+    path('index/', views.index),
+    path('login/', views.login),
+    path('register/', views.register),
+    path('logout/', views.logout),
+
 ]
