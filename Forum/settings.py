@@ -129,3 +129,13 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 import mimetypes
 mimetypes.add_type('text/css', '.css')
 mimetypes.add_type('application/javascript', '.js')
+
+# 邮件配置
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sina.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'xd1455817493@sina.com'
+EMAIL_HOST_PASSWORD = 'e1c187f1f7a43e5a'
+
+# 注册有效期天数
+CONFIRM_DAYS = 7
